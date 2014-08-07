@@ -105,6 +105,20 @@
 									   [self.stationList addObject:station];
 								   }
 
+								   [self.stationList sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+									   MMDivvyStation *station1 = (MMDivvyStation *)obj1;
+									   MMDivvyStation *station2 = (MMDivvyStation *)obj2;
+
+									   CLLocation *location1 = [[CLLocation alloc] initWithLatitude:[station1.dictionary[@"latitude"] doubleValue]
+																						  longitude:[station1.dictionary[@"longitude"] doubleValue]];
+									   CLLocation *location2 = [[CLLocation alloc] initWithLatitude:[station2.dictionary[@"latitude"] doubleValue]
+																						  longitude:[station2.dictionary[@"longitude"] doubleValue]];
+
+									   NSNumber *distance1 = [NSNumber numberWithDouble:[self.currentLocation distanceFromLocation:location1]];
+									   NSNumber *distance2 = [NSNumber numberWithDouble:[self.currentLocation distanceFromLocation:location2]];
+									   return [distance1 compare:distance2];
+								   }];
+
 								   [self.myTableView reloadData];
 							   } else {
 								   NSLog(@"Error loading json : %@", [connectionError localizedDescription]);
