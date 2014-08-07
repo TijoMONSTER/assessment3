@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>844A2436-3B73-4B33-A1F2-86D92EF8D243</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Assessment3_ObjectiveC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9DE8DD7C-C016-448C-932E-97FF616506A2</key>
+		<string>https://github.com/TijoMONSTER/assessment3.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Assessment3_ObjectiveC.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9DE8DD7C-C016-448C-932E-97FF616506A2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TijoMONSTER/assessment3.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9DE8DD7C-C016-448C-932E-97FF616506A2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9DE8DD7C-C016-448C-932E-97FF616506A2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Assessment3</string>
+		</dict>
+	</array>
+</dict>
+</plist>

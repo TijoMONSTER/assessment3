@@ -115,9 +115,8 @@
 - (void)searchTableList
 {
 	NSString *searchString = self.searchBar.text;
-
-    for (MMDivvyStation *station in self.stationList) {
-		if (!([station.dictionary[@"stAddress1"] rangeOfString:searchString].location == NSNotFound)) {
+	for (MMDivvyStation *station in self.stationList) {
+		if (!([station.dictionary[@"stAddress1"] rangeOfString:searchString options:NSCaseInsensitiveSearch].location == NSNotFound)) {
 			[self.filteredStationList addObject:station];
 		}
     }
